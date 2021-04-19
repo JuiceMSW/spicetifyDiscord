@@ -26,7 +26,7 @@
 	border-radius: 8px !important;
 }
 
-/* Sidebar Scrollbar */
+/* Sidebar Scrollbars */
 #view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar,
 body:not(.is-main-content-page-iframe).scrollbar-style-visible-windows::-webkit-scrollbar {
     width: 8px !important;
@@ -106,6 +106,7 @@ body:not(.is-main-content-page-iframe).scrollbar-style-visible-windows:hover {
     background: none !important;
 }
 
+/* Background Color (Helps with Scrollbar Background as well) */
 body, #app-browse, #app-collection-songs, #app-collection, #app-playlist, #app-artist, #app-show, #app-collection-artist, #app-search,
 #mount-home, #mount-radio-hub, #mount-made-for-you, #mount-recently-played, #mount-album, #app-queue {
     background-color: #36393F !important;
@@ -125,6 +126,7 @@ body, #app-browse, #app-collection-songs, #app-collection, #app-playlist, #app-a
     border: none !important;
 } */
 
+/* Content Header Background */
 #header,
 div.Header__background {
     background-color: #36393F !important;
@@ -144,6 +146,7 @@ div.Header__background {
     display: none !important;
 } */
 
+/* Content Header Remove Gradient */
 div.Header__background > div,
 div.Header__top-bar {
     display: none !important;
@@ -162,6 +165,7 @@ body > div.app-header > header > div.glue-page-header__background,
     border: none !important;
 } */
 
+/* Content Sticky Header Background */
 div.glue-page-header__background,
 div.GlueHeader__background {
     background-color: #36393F !important;
@@ -189,6 +193,7 @@ body > div.app-header > header > div.glue-page-header__top-bar,
     display: none !important;
 } */
 
+/* Content Sticky Header Remove Gradient */
 div.glue-page-header__background > div,
 div.glue-page-header__top-bar,
 div.GlueHeader__background > div,
@@ -196,11 +201,15 @@ div.GlueHeader__top-bar {
     display: none !important;
 }
 
+/* Top Bar Shadows */
+
+/* Window Header and Main Content */
 #header {
     right: 0;
     box-shadow: 0px 1px 1px #2B2E33 !important;
 }
 
+/* Window Header and Nav Bar */
 #view-navigation-bar {
     box-shadow: 0px -1px 1px #232527 !important;
 }
