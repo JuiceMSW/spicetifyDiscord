@@ -27,39 +27,48 @@
 }
 
 /* Sidebar Scrollbar */
-#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar {
+#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar,
+body:not(.is-main-content-page-iframe).scrollbar-style-visible-windows::-webkit-scrollbar {
     width: 8px !important;
 }
 
-#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-thumb {
+#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-thumb,
+body:not(.is-main-content-page-iframe).scrollbar-style-visible-windows::-webkit-scrollbar-thumb {
     border: 2px solid transparent !important;
     background-clip: padding-box !important;
     border-radius: 8px !important;
     background-color: #202225 !important;
 }
 
-#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-button {
+#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-button,
+body:not(.is-main-content-page-iframe).scrollbar-style-visible-windows::-webkit-scrollbar-button {
 	display: none;
 }
 
-#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-corner {
+#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-corner,
+body:not(.is-main-content-page-iframe).scrollbar-style-visible-windows::-webkit-scrollbar-corner {
     background-color: transparent;
 }
 
-#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-track {
+#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-track,
+body:not(.is-main-content-page-iframe).scrollbar-style-visible-windows::-webkit-scrollbar-track {
 	background-color: transparent !important;
 }
 
-#view-navigation-bar > div > div.LeftSidebar__scroll-section {
+#view-navigation-bar > div > div.LeftSidebar__scroll-section,
+body:not(.is-main-content-page-iframe).scrollbar-style-visible-windows {
     overflow: hidden;
 }
 
-#view-navigation-bar > div > div.LeftSidebar__scroll-section:hover {
+#view-navigation-bar > div > div.LeftSidebar__scroll-section:hover,
+body:not(.is-main-content-page-iframe).scrollbar-style-visible-windows:hover {
     overflow-y: scroll;
 }
 
-/* Makes drop down arrows not move when hovering */
-#view-navigation-bar > div > div.LeftSidebar__scroll-section > div.LeftSidebar__section.LeftSidebar__section--rootlist > div > div > div > ul > li {
+/* Makes content not shift when hovering */
+#view-navigation-bar > div > div.LeftSidebar__scroll-section > div.LeftSidebar__section.LeftSidebar__section--rootlist > div > div > div > ul > li,
+#view-navigation-bar > div > div.LeftSidebar__scroll-section > div > div > ul > li.SidebarListItem,
+#root > div > div.cards-wrapper > div > div {
     width: calc(240px - 8px)
 }
 
@@ -98,11 +107,15 @@
 }
 
 body, #app-browse, #app-collection-songs, #app-collection, #app-playlist, #app-artist, #app-show, #app-collection-artist, #app-search,
-#mount-home, #mount-radio-hub, #mount-made-for-you, #mount-recently-played, #mount-album {
+#mount-home, #mount-radio-hub, #mount-made-for-you, #mount-recently-played, #mount-album, #app-queue {
     background-color: #36393F !important;
 }
 
-#header,
+#iframe-buddy-list {
+    background-color: #2F3136 !important;
+}
+
+/* #header,
 #mount-home > div > div.HomeRoot__header > div > header > div.Header__background,
 #mount-radio-hub > div > div.RadioHubRoot__header > div > header > div.Header__background,
 #mount-made-for-you > div > div.MadeForYouRoot__header > div > header > div.Header__background,
@@ -110,9 +123,15 @@ body, #app-browse, #app-collection-songs, #app-collection, #app-playlist, #app-a
 #mount-album > div > div.AlbumRoot__header > div > header > div.Header__background {
     background-color: #36393F !important;
     border: none !important;
+} */
+
+#header,
+div.Header__background {
+    background-color: #36393F !important;
+    border: none !important;
 }
 
-#mount-home > div > div.HomeRoot__header > div > header > div.Header__background > div,
+/* #mount-home > div > div.HomeRoot__header > div > header > div.Header__background > div,
 #mount-home > div > div.HomeRoot__header > div > header > div.Header__top-bar,
 #mount-radio-hub > div > div.RadioHubRoot__header > div > header > div.Header__background > div,
 #mount-radio-hub > div > div.RadioHubRoot__header > div > header > div.Header__top-bar,
@@ -123,9 +142,14 @@ body, #app-browse, #app-collection-songs, #app-collection, #app-playlist, #app-a
 #mount-album > div > div.AlbumRoot__header > div > header > div.Header__background > div,
 #mount-album > div > div.AlbumRoot__header > div > header > div.Header__top-bar {
     display: none !important;
+} */
+
+div.Header__background > div,
+div.Header__top-bar {
+    display: none !important;
 }
 
-body > header > div:nth-child(2) > header > div.glue-page-header__background,
+/* body > header > div:nth-child(2) > header > div.glue-page-header__background,
 #header-placeholder > div > div.app-header__content > header > div.glue-page-header__background,
 #root > div > div.App__header > div > header > div.glue-page-header__background,
 #header > div.playlist-header-wrapper > header > div.glue-page-header__background,
@@ -136,9 +160,15 @@ body > div.app-header > header > div.glue-page-header__background,
 #root > div > div.App__header > div > div.GlueHeader__background {
     background-color: #36393F !important;
     border: none !important;
+} */
+
+div.glue-page-header__background,
+div.GlueHeader__background {
+    background-color: #36393F !important;
+    border: none !important;
 }
 
-body > header > div:nth-child(2) > header > div.glue-page-header__background > div,
+/* body > header > div:nth-child(2) > header > div.glue-page-header__background > div,
 body > header > div:nth-child(2) > header > div.glue-page-header__top-bar,
 #header-placeholder > div > div.app-header__content > header > div.glue-page-header__background > div,
 #header-placeholder > div > div.app-header__content > header > div.glue-page-header__top-bar,
@@ -156,6 +186,13 @@ body > div.app-header > header > div.glue-page-header__background > div,
 body > div.app-header > header > div.glue-page-header__top-bar,
 #root > div > div.App__header > div > div.GlueHeader__background > div,
 #root > div > div.App__header > div > div.GlueHeader__top-bar {
+    display: none !important;
+} */
+
+div.glue-page-header__background > div,
+div.glue-page-header__top-bar,
+div.GlueHeader__background > div,
+div.GlueHeader__top-bar {
     display: none !important;
 }
 
