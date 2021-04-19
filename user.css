@@ -1,0 +1,209 @@
+/* Main Scrollbar */
+::-webkit-scrollbar {
+    width: 16px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 4px solid transparent !important;
+    background-clip: padding-box !important;
+    border-radius: 8px !important;
+    background-color: #202225 !important;
+}
+
+::-webkit-scrollbar-button {
+	visibility: hidden;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent !important;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #2E3338 !important;
+	width: 8px !important;
+	border: 4px solid transparent !important;
+	background-clip: padding-box !important;
+	border-radius: 8px !important;
+}
+
+/* Sidebar Scrollbar */
+#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-thumb {
+    border: 2px solid transparent !important;
+    background-clip: padding-box !important;
+    border-radius: 8px !important;
+    background-color: #202225 !important;
+}
+
+#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-button {
+	display: none;
+}
+
+#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+#view-navigation-bar > div > div.LeftSidebar__scroll-section::-webkit-scrollbar-track {
+	background-color: transparent !important;
+}
+
+#view-navigation-bar > div > div.LeftSidebar__scroll-section {
+    overflow: hidden;
+}
+
+#view-navigation-bar > div > div.LeftSidebar__scroll-section:hover {
+    overflow-y: scroll;
+}
+
+/* Makes drop down arrows not move when hovering */
+#view-navigation-bar > div > div.LeftSidebar__scroll-section > div.LeftSidebar__section.LeftSidebar__section--rootlist > div > div > div > ul > li {
+    width: calc(240px - 8px)
+}
+
+/* Disables clunky resizers */
+#view-resize-nav, #resize-buddy-list {
+    display: none;
+}
+
+/* Sidebar Formatting */
+#menu-wrapper, #view-buddy-list {
+    width: 240px;
+}
+
+#menu-wrapper, #view-navigation-bar, #view-navigation-bar > div > div.LeftSidebar__scroll-section {
+    background-color: #2F3136;
+}
+
+#new-playlist-button-mount-point > div > button {
+    background-color: #292B2F;
+}
+
+/* Playback Bar Formatting */
+#view-player {
+    background-color: #36393F;
+}
+
+#view-player-footer {
+    background-color: #40444B;
+    margin: 16px;
+    border-radius: 10px;
+    border: none;
+}
+
+.scroll-text-container:before, .scroll-text-container:after {
+    background: none !important;
+}
+
+body, #app-browse, #app-collection-songs, #app-collection, #app-playlist, #app-artist, #app-show, #app-collection-artist, #app-search,
+#mount-home, #mount-radio-hub, #mount-made-for-you, #mount-recently-played, #mount-album {
+    background-color: #36393F !important;
+}
+
+#header,
+#mount-home > div > div.HomeRoot__header > div > header > div.Header__background,
+#mount-radio-hub > div > div.RadioHubRoot__header > div > header > div.Header__background,
+#mount-made-for-you > div > div.MadeForYouRoot__header > div > header > div.Header__background,
+#mount-recently-played > div > div.RecentlyPlayedPage__header > header > div.Header__background,
+#mount-album > div > div.AlbumRoot__header > div > header > div.Header__background {
+    background-color: #36393F !important;
+    border: none !important;
+}
+
+#mount-home > div > div.HomeRoot__header > div > header > div.Header__background > div,
+#mount-home > div > div.HomeRoot__header > div > header > div.Header__top-bar,
+#mount-radio-hub > div > div.RadioHubRoot__header > div > header > div.Header__background > div,
+#mount-radio-hub > div > div.RadioHubRoot__header > div > header > div.Header__top-bar,
+#mount-made-for-you > div > div.MadeForYouRoot__header > div > header > div.Header__background > div,
+#mount-made-for-you > div > div.MadeForYouRoot__header > div > header > div.Header__top-bar,
+#mount-recently-played > div > div.RecentlyPlayedPage__header > header > div.Header__background > div,
+#mount-recently-played > div > div.RecentlyPlayedPage__header > header > div.Header__top-bar,
+#mount-album > div > div.AlbumRoot__header > div > header > div.Header__background > div,
+#mount-album > div > div.AlbumRoot__header > div > header > div.Header__top-bar {
+    display: none !important;
+}
+
+body > header > div:nth-child(2) > header > div.glue-page-header__background,
+#header-placeholder > div > div.app-header__content > header > div.glue-page-header__background,
+#root > div > div.App__header > div > header > div.glue-page-header__background,
+#header > div.playlist-header-wrapper > header > div.glue-page-header__background,
+#root > div > div.App__header > div > div > header > div.glue-page-header__background,
+body > div.online-content > div.app-header > header > div.glue-page-header__background,
+#header-wrapper > div > header > div.glue-page-header__background,
+body > div.app-header > header > div.glue-page-header__background,
+#root > div > div.App__header > div > div.GlueHeader__background {
+    background-color: #36393F !important;
+    border: none !important;
+}
+
+body > header > div:nth-child(2) > header > div.glue-page-header__background > div,
+body > header > div:nth-child(2) > header > div.glue-page-header__top-bar,
+#header-placeholder > div > div.app-header__content > header > div.glue-page-header__background > div,
+#header-placeholder > div > div.app-header__content > header > div.glue-page-header__top-bar,
+#root > div > div.App__header > div > header > div.glue-page-header__background > div,
+#root > div > div.App__header > div > header > div.glue-page-header__top-bar,
+#header > div.playlist-header-wrapper > header > div.glue-page-header__background > div,
+#header > div.playlist-header-wrapper > header > div.glue-page-header__top-bar,
+#root > div > div.App__header > div > div > header > div.glue-page-header__background > div,
+#root > div > div.App__header > div > div > header > div.glue-page-header__top-bar,
+body > div.online-content > div.app-header > header > div.glue-page-header__background > div,
+body > div.online-content > div.app-header > header > div.glue-page-header__top-bar,
+#header-wrapper > div > header > div.glue-page-header__background > div,
+#header-wrapper > div > header > div.glue-page-header__top-bar,
+body > div.app-header > header > div.glue-page-header__background > div,
+body > div.app-header > header > div.glue-page-header__top-bar,
+#root > div > div.App__header > div > div.GlueHeader__background > div,
+#root > div > div.App__header > div > div.GlueHeader__top-bar {
+    display: none !important;
+}
+
+#header {
+    right: 0;
+    box-shadow: 0px 1px 1px #2B2E33 !important;
+}
+
+#view-navigation-bar {
+    box-shadow: 0px -1px 1px #232527 !important;
+}
+
+body > div.online-content > div.app-content > div > div.tracklist-station-container::after {
+    background: none !important;
+}
+
+.tl-cell {
+    border: none !important;
+}
+
+[class="scrollbar-style-visible-windows body-container--windows"],
+#root > div > div.cards-wrapper > div > div > div,
+#root > div > div.buddy-list-title > div {
+    background-color: #2F3136 !important;
+}
+
+#view-buddy-list {
+    background-color: #181818;
+}
+
+#view-content {
+    background-color: #36393F !important;
+}
+
+#remote-playback-bar {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+th.tl-explicit, td.tl-cell.tl-explicit {
+    width: 0px;
+}
+
+.progress-bar {
+    background: #2E3338;
+
+}
+
+.progress-bar .inner {
+    background-color: #202225;
+}
